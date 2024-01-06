@@ -1,0 +1,3 @@
+memoisation is an optimization technique used primarily, to speed up computer programs 
+by storing the result of expensive function , calls and return the cached result 
+when the same output occur again..

@@ -3,7 +3,7 @@ const Cart=["Apple","Banana","Orange"];
 let promise=CreateOrder(Cart);//it retrun promisr
 //add Promise chaining
 promise.then(function(orderID){ //consume a promise
-    console.log(orderID);
+    console.log("order ID ",orderID);
     return orderID;
 })
 .then(function(orderID){
@@ -27,7 +27,7 @@ promise.then(function(orderID){ //consume a promise
 
 function proceedToPay(orderID){
     let paypromie=new Promise(function(resolve,reject){
-        resolve("Success",orderID);
+        resolve("Success Order ",orderID);
     })
     return paypromie;
 }
