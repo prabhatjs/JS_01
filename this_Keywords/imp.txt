@@ -1,0 +1,20 @@
+this in global space
+----------------------------------------
+this        --global scope
+this point to window object,global object is window object
+
+
+this inside a function 
+-----------------------------------------
+function(){
+     this   --function scope
+}
+
+this in strict mode
+-----------------------------------------
+
+
+this value depends on how this is called (window)
+--------------------------------------------------
+
+this inside 

@@ -5,7 +5,10 @@ const facebookFrinds=[
     {name:'Dhiru',frinds:['Sanket','ankit','sadab'],age:29}
 ]
 
+    function totalfrinds(a,c){
+        return [...a,...c.frinds];
 
+    }
 
-const displayFrinds=(facebookFrinds)=>facebookFrinds.reduce((listoffrinds,{name,frinds,age})=>{return [...listoffrinds,...frinds]},[])
-console.log(displayFrinds(facebookFrinds));
+    const displayFrinds=facebookFrinds.reduce(totalfrinds,[]);
+    console.log(displayFrinds);
